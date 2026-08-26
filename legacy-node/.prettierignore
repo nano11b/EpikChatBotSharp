@@ -1,0 +1,7 @@
+node_modules/
+coverage/
+backups/
+plugins/*.disabled
+*.sqlite*
+*.jsonl*
+package-lock.json

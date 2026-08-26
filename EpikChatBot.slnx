@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="EpikChatBot.csproj" />
+  <Project Path="tests-csharp/EpikChatBot.Tests.csproj" />
+</Solution>

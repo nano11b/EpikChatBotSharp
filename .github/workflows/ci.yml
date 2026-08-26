@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+          cache: true
+          cache-dependency-path: '**/packages.lock.json'
+      - name: Restore locked dependencies
+        run: dotnet restore EpikChatBot.slnx --locked-mode
+      - name: Verify formatting
+        run: dotnet format EpikChatBot.slnx --verify-no-changes --no-restore
+      - name: Build with warnings as errors
+        run: dotnet build EpikChatBot.slnx --configuration Release --no-restore
+      - name: Test with coverage
+        run: dotnet test EpikChatBot.slnx --configuration Release --no-build --collect:"XPlat Code Coverage" --results-directory artifacts/test-results
+      - name: Enforce coverage floor
+        shell: pwsh
+        run: |
+          $report = Get-ChildItem artifacts/test-results -Recurse -Filter coverage.cobertura.xml | Select-Object -First 1
+          if (-not $report) { throw "Coverage report was not generated." }
+          [xml]$coverage = Get-Content $report.FullName
+          if ([double]$coverage.coverage.'line-rate' -lt 0.50) { throw "Line coverage fell below 50%." }
+          if ([double]$coverage.coverage.'branch-rate' -lt 0.20) { throw "Branch coverage fell below 20%." }
+      - name: Audit direct and transitive packages
+        shell: bash
+        run: |
+          audit="$(dotnet list EpikChatBot.csproj package --vulnerable --include-transitive --no-restore)"
+          echo "$audit"
+          if grep -q "has the following vulnerable packages" <<< "$audit"; then
+            exit 1
+          fi
+      - name: Publish smoke test
+        run: dotnet publish EpikChatBot.csproj --configuration Release --no-restore --output artifacts/publish
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: validation-artifacts
+          path: artifacts/

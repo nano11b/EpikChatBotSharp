@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net8.0": {
+      "MessagePack": {
+        "type": "Direct",
+        "requested": "[3.1.8, )",
+        "resolved": "3.1.8",
+        "contentHash": "Qk2q+9FVxnMSp+NQ9y3SLz3HqWe7Rg3KRMHhBX28FkKUoOeP9YIU86mA4pFOxDDjUIRA9e7Ssbxs/LwWUcAzPw==",
+        "dependencies": {
+          "MessagePack.Annotations": "3.1.8",
+          "MessagePackAnalyzer": "3.1.8",
+          "Microsoft.NET.StringTools": "17.11.4"
+        }
+      },
+      "Microsoft.Data.Sqlite": {
+        "type": "Direct",
+        "requested": "[8.0.20, )",
+        "resolved": "8.0.20",
+        "contentHash": "k2mM6VuzvNlmrXPCXm+78Y+jgUifiaPdL9TpuSpJ73fLj3ErYq1CqCgDZR/BfBcvAXJrDYWGPrQ775okL62XEA==",
+        "dependencies": {
+          "Microsoft.Data.Sqlite.Core": "8.0.20",
+          "SQLitePCLRaw.bundle_e_sqlite3": "2.1.6"
+        }
+      },
+      "SocketIO.Serializer.MessagePack": {
+        "type": "Direct",
+        "requested": "[3.1.2, )",
+        "resolved": "3.1.2",
+        "contentHash": "eYSPq7aKP11crDqGA5XlcGtQBqbeydbzgKb6FgySAlUqgGWZ2foXuQLIiBbPJPuH6ygaqycvQimw+oz5328AeA==",
+        "dependencies": {
+          "MessagePack": "2.5.124",
+          "SocketIO.Core": "3.1.1",
+          "SocketIO.Serializer.Core": "3.1.1"
+        }
+      },
+      "SocketIOClient": {
+        "type": "Direct",
+        "requested": "[3.1.1, )",
+        "resolved": "3.1.1",
+        "contentHash": "g8Lauia1Cj5DBXeC9j6vDSJeQEboGmXsnduW06VOBMe+UgqCrenxszYXJg19rAjwO10XRWQorOuU1XNMfYo8Xg==",
+        "dependencies": {
+          "SocketIO.Serializer.Core": "3.1.1",
+          "SocketIO.Serializer.SystemTextJson": "3.1.1",
+          "System.Collections": "4.3.0"
+        }
+      },
+      "SQLitePCLRaw.bundle_e_sqlite3": {
+        "type": "Direct",
+        "requested": "[3.0.5, )",
+        "resolved": "3.0.5",
+        "contentHash": "SW8iASIyWMrLzqabUHYQRvALhvD4ylSBsj4PgEVGwc36kQjc9xT5kSV/XQ9rU7nIpBWD+LPyX3Hlw5FzyUzGeQ==",
+        "dependencies": {
+          "SQLite": "3.53.4",
+          "SQLitePCLRaw.config.e_sqlite3": "3.0.5"
+        }
+      },
+      "System.Text.Json": {
+        "type": "Direct",
+        "requested": "[8.0.6, )",
+        "resolved": "8.0.6",
+        "contentHash": "BvSpVBsVN9b+Y+wONbvJOHd1HjXQf33+XiC28ZMOwRsYb42mz3Q8YHnpTSwpwJLqYCMqM+0UUVC3V+pi25XfkQ=="
+      },
+      "MessagePack.Annotations": {
+        "type": "Transitive",
+        "resolved": "3.1.8",
+        "contentHash": "SitOtZ4tOlAZZPF7p52M7143F+Cuz7o/aU0MrtAXX0+ZkPXzDNroOFhzzE2ogMFThsoEW/E6akXVVcBFM9ZKaw=="
+      },
+      "MessagePackAnalyzer": {
+        "type": "Transitive",
+        "resolved": "3.1.8",
+        "contentHash": "Vm4g0cR4YRKRchEOmMJ0uVFU6yxdg7cJa2KHv3SUAHEsdYKvMpHMF5A1hZfsix89ymD5cmuzRnw9a6dKMcvq+Q=="
+      },
+      "Microsoft.Data.Sqlite.Core": {
+        "type": "Transitive",
+        "resolved": "8.0.20",
+        "contentHash": "rsceqxvqaCKbASZahYa8chNdEtCghU2JErugi+Ngs/ds2QJrQixsSomGSFCR7219xQXMiz2pSrWshwm/DHqqNw==",
+        "dependencies": {
+          "SQLitePCLRaw.core": "2.1.6"
+        }
+      },
+      "Microsoft.NET.StringTools": {
+        "type": "Transitive",
+        "resolved": "17.11.4",
+        "contentHash": "mudqUHhNpeqIdJoUx2YDWZO/I9uEDYVowan89R6wsomfnUJQk6HteoQTlNjZDixhT2B4IXMkMtgZtoceIjLRmA=="
+      },
+      "Microsoft.NETCore.Platforms": {
+        "type": "Transitive",
+        "resolved": "1.1.0",
+        "contentHash": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A=="
+      },
+      "Microsoft.NETCore.Targets": {
+        "type": "Transitive",
+        "resolved": "1.1.0",
+        "contentHash": "aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg=="
+      },
+      "SocketIO.Core": {
+        "type": "Transitive",
+        "resolved": "3.1.1",
+        "contentHash": "L5GSyODDjlub5YdDxfsRtA9uxBNw1Hs/egEMhdOGFyD0c63VmvWQ1A4Gfc4GYKYInz1muP4C8QNblXErnUYDqA=="
+      },
+      "SocketIO.Serializer.Core": {
+        "type": "Transitive",
+        "resolved": "3.1.1",
+        "contentHash": "aFanlt2GOGEy7GTGLyh8f8SwhtmQwoPOHTAYCQ0brjg05Nb3F38sk4hYogpII5imyZ7w0spqwNHwpl7FZ49HOA==",
+        "dependencies": {
+          "SocketIO.Core": "3.1.1"
+        }
+      },
+      "SocketIO.Serializer.SystemTextJson": {
+        "type": "Transitive",
+        "resolved": "3.1.1",
+        "contentHash": "1PKQ+hOAJ4l3ZXlrVgiB3uNY3kLhjzYjnxk/97V6npJrNmhq09Di2EQSpGweQMu6KPbOxjZ7eYVARkGTWIUsjg==",
+        "dependencies": {
+          "SocketIO.Core": "3.1.1",
+          "SocketIO.Serializer.Core": "3.1.1",
+          "System.Text.Json": "7.0.3"
+        }
+      },
+      "SQLite": {
+        "type": "Transitive",
+        "resolved": "3.53.4",
+        "contentHash": "KN7jeWqgUPeBRe1FlcpZURzxomuKKEKHmBBQfg+Nx7NkY1LjKhzHvH+3ASkNvhayESE34nMBinL9CV21JfPRJw=="
+      },
+      "SQLitePCLRaw.config.e_sqlite3": {
+        "type": "Transitive",
+        "resolved": "3.0.5",
+        "contentHash": "aSk8WE5tF2MybESMgtZAEyMVCAWA0nBqOMc48HFoa9UoSdtm3goDXVzNRnefeKIwE6bV9NaNXptn1F9ReMQI0Q==",
+        "dependencies": {
+          "SQLitePCLRaw.provider.e_sqlite3": "3.0.5"
+        }
+      },
+      "SQLitePCLRaw.core": {
+        "type": "Transitive",
+        "resolved": "3.0.5",
+        "contentHash": "k81AYXXRCw3Zj8rOhyBoCsx/U97KYDFI2CSKr/ijl5BwpsW/hX/4kBiDmerFaoust8nxBwa0IHQFw8MmSHRtnQ=="
+      },
+      "SQLitePCLRaw.provider.e_sqlite3": {
+        "type": "Transitive",
+        "resolved": "3.0.5",
+        "contentHash": "um8YSWduhhuskTG2bHfZrBqMNQOydfU8pcseT+cu5RivOGyoUbCrGXxgoRNTmRYw2VbMWnEZVVFcneZT/5dsBg==",
+        "dependencies": {
+          "SQLitePCLRaw.core": "3.0.5"
+        }
+      },
+      "System.Collections": {
+        "type": "Transitive",
+        "resolved": "4.3.0",
+        "contentHash": "3Dcj85/TBdVpL5Zr+gEEBUuFe2icOnLalmEh9hfck1PTYbbyWuZgh4fmm2ysCLTrqLQw6t3TgTyJ+VLp+Qb+Lw==",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Runtime": {
+        "type": "Transitive",
+        "resolved": "4.3.0",
+        "contentHash": "JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0"
+        }
+      }
+    }
+  }
+}

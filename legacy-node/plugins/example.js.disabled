@@ -1,0 +1,12 @@
+// Rename to example.js to enable this trusted local plugin.
+module.exports = {
+  name: "example",
+  version: "1.0.0",
+  register({ registerCommand }) {
+    registerCommand({
+      name: "wave",
+      description: "Wave hello",
+      handler: ({ senderName }) => ({ reply: `Hello, ${senderName || "friend"}!` }),
+    });
+  },
+};

@@ -1,0 +1,31 @@
+{
+  "name": "epikchat-bot",
+  "version": "1.0.0",
+  "description": "EpikChat bot that joins a room and replies using OpenAI.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "node --test",
+    "coverage": "node --test --experimental-test-coverage --test-coverage-lines=75 --test-coverage-functions=65 --test-coverage-branches=55",
+    "lint": "eslint main.js marbles.js lib scripts test eslint.config.js",
+    "format": "prettier --write \"**/*.{js,json,md,yml,yaml}\"",
+    "format:check": "prettier --check \"**/*.{js,json,md,yml,yaml}\"",
+    "simulate": "node scripts/simulate.js",
+    "migrate": "node scripts/migrate-to-sqlite.js",
+    "check": "node scripts/check.js",
+    "ci": "npm run check && npm run lint && npm test && npm run coverage"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "openai": "^4.9.0",
+    "socket.io-client": "^4.7.2",
+    "socket.io-msgpack-parser": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.5",
+    "prettier": "^3.9.6"
+  }
+}

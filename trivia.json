@@ -1,0 +1,157 @@
+[
+  {
+    "question": "What is the largest planet in our solar system?",
+    "answer": "jupiter",
+    "choices": ["Mars", "Jupiter", "Saturn", "Neptune"],
+    "hint": "It is the fifth planet from the Sun.",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "question": "Which element has the chemical symbol O?",
+    "answer": "oxygen",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "question": "What year did the first human walk on the moon?",
+    "answer": "1969",
+    "difficulty": "medium",
+    "category": "history"
+  },
+  {
+    "question": "What is the capital city of France?",
+    "answer": "paris",
+    "choices": ["Lyon", "Paris", "Nice", "Bordeaux"],
+    "difficulty": "easy",
+    "category": "geography"
+  },
+  {
+    "question": "How many continents are there on Earth?",
+    "answer": "7",
+    "acceptedAnswers": ["seven"],
+    "difficulty": "easy",
+    "category": "geography"
+  },
+  {
+    "question": "What is the hardest natural substance on Earth?",
+    "answer": "diamond",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "question": "Which animal is known as the king of the jungle?",
+    "answer": "lion",
+    "difficulty": "easy",
+    "category": "animals"
+  },
+  {
+    "question": "What is the smallest prime number?",
+    "answer": "2",
+    "acceptedAnswers": ["two"],
+    "difficulty": "easy",
+    "category": "math"
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "answer": "mars",
+    "choices": ["Venus", "Mars", "Mercury", "Jupiter"],
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "question": "What do bees collect from flowers to make honey?",
+    "answer": "nectar",
+    "difficulty": "easy",
+    "category": "nature"
+  },
+  {
+    "question": "In computing, what does CPU stand for?",
+    "answer": "central processing unit",
+    "acceptedAnswers": ["cpu"],
+    "difficulty": "medium",
+    "category": "technology"
+  },
+  {
+    "question": "What is the chemical symbol for gold?",
+    "answer": "au",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "question": "Who painted the Mona Lisa?",
+    "answer": "leonardo da vinci",
+    "acceptedAnswers": ["da vinci"],
+    "difficulty": "medium",
+    "category": "art"
+  },
+  {
+    "question": "What is the tallest mountain in the world?",
+    "answer": "mount everest",
+    "acceptedAnswers": ["everest"],
+    "difficulty": "easy",
+    "category": "geography"
+  },
+  {
+    "question": "What is the primary language spoken in Brazil?",
+    "answer": "portuguese",
+    "difficulty": "medium",
+    "category": "culture"
+  },
+  {
+    "question": "What gas do plants absorb from the atmosphere?",
+    "answer": "carbon dioxide",
+    "acceptedAnswers": ["co2"],
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "question": "How many legs does a spider have?",
+    "answer": "8",
+    "acceptedAnswers": ["eight"],
+    "difficulty": "easy",
+    "category": "animals"
+  },
+  {
+    "question": "Which river flows through Egypt and empties into the Mediterranean Sea?",
+    "answer": "nile",
+    "acceptedAnswers": ["the nile"],
+    "difficulty": "medium",
+    "category": "geography"
+  },
+  {
+    "question": "Who wrote Romeo and Juliet?",
+    "answer": "william shakespeare",
+    "acceptedAnswers": ["shakespeare"],
+    "difficulty": "easy",
+    "category": "literature"
+  },
+  {
+    "question": "Which planet has rings around it?",
+    "answer": "saturn",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "question": "Which element has the atomic number 74?",
+    "answer": "tungsten",
+    "acceptedAnswers": ["wolfram"],
+    "hint": "Its chemical symbol is W.",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "question": "Which treaty formally ended the state of war between Germany and the Allied Powers after World War I?",
+    "answer": "treaty of versailles",
+    "acceptedAnswers": ["versailles"],
+    "difficulty": "hard",
+    "category": "history"
+  },
+  {
+    "question": "What is the largest moon in the solar system?",
+    "answer": "ganymede",
+    "choices": ["Titan", "Ganymede", "Callisto", "Io"],
+    "difficulty": "hard",
+    "category": "science"
+  }
+]
